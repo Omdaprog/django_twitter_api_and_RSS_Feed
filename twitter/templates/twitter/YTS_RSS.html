@@ -1,0 +1,30 @@
+{% extends 'twitter/base.html' %}
+
+
+
+
+{% block content %}
+<div class="Container">
+    {% for key, value in movies.items %}
+        {% if value.title %}
+            <div class="container2">
+                <div class="sous_container1">
+                    <h2 class="title">{{value.title}}</h2>
+                    <img class="images" src="{{ value.image_link }}" alt="">
+                </div>
+                
+                <div class="sous_container2">
+                    <h5>{{value.rating}}</h5>
+                    <h5>{{value.genre}}</h5>
+                    <h6>{{value.downloads}}</h6>
+                    <p>{{ value.description }}</p>
+                    <a class="btn btn-primary" href="{{value.link}}">More detail | Download</a>
+                </div>
+            </div>
+        {% endif %}
+    {% endfor %}    
+</div>
+
+
+
+{% endblock %}
