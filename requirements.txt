@@ -3,7 +3,7 @@ astroid==2.0.4
 certifi==2018.11.29
 chardet==3.0.4
 colorama==0.4.0
-Django==2.1.5
+Django==2.2.24
 django-contrib-comments==1.9.1
 django-feedparser==0.2.1
 feedparser==5.2.1
